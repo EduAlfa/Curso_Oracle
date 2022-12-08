@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<h2>Calcular el IMC de personas</h2>
+
+<script>
+    function saltarLineas(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(mensaje){
+        document.write(mensaje)
+        saltarLineas();
+    }
+
+    function calcularImc(peso, altura, nombre){
+        imc = peso / (altura*altura);
+        imprimir("El imc de " + nombre+ " es: " + imc);
+    }
+
+    calcularImc(65, 1.72, "Luis");
+    calcularImc(69, 1.85, "Josue");
+
+</script>
