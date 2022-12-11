@@ -9,3 +9,5 @@ alert es una junción de JS y las funciones siempre van a ir en () Cuándo abrim
 Cuándo definimos una variable, la tenemos que asignarla asimilando su acción que tiene
 
 Para declarar funciones hay que hacerlo con verbos porque la moyoría de veces cumple con una acción con generando accioens
+
+Funciones predeterminadas de JS Math.random para poder dar un numero al azar y Math.round para poder aproximar una cantidad en algún entero
