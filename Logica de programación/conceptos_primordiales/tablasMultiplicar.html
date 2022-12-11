@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<h1>Tabla de multiplicar</h1>
+
+<script>
+    function saltarLinea(){
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(message){
+        document.write(message);
+        saltarLinea();
+    }
+
+    var contador = 1;
+
+    imprimir("While")
+    while (contador <= 10) {
+        imprimir("5 x " + contador + " = " +(contador*5));
+        contador++;
+    }
+
+    saltarLinea();
+
+    imprimir("<h2>For</h2>");
+    for (var iterador = 1;iterador<=10;iterador++) {
+        imprimir(" 5 x " + iterador + " = " + (5*iterador));
+    }
+</script>
