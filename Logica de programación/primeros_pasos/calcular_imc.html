@@ -1,64 +1,66 @@
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
 
 <h2>Calcular el IMC de personas</h2>
 
 <script>
+  function calcularImc(peso, altura, nombre) {
+    return peso / (altura * altura);
+    imprimir("El indice de masa corporal" + nombre + " es: " + imc);
+  }
 
-    function calcularImc(peso, altura, nombre){
-        return peso / (altura * altura);
-        imprimir("El indice de masa corporal" + nombre +" es: " + imc);
-        
-    }
+  function saltarLineas() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+  }
 
-    function saltarLineas(){
-        document.write("<br>");
-        document.write("<br>");
-        document.write("<br>");
-    }
+  function imprimir(mensaje) {
+    document.write(mensaje);
+    saltarLineas();
+  }
 
-    function imprimir(mensaje){
-        document.write(mensaje);
-        saltarLineas();
-    }
+  var pesoEduardo = 65;
+  var alturaEduardo = 1.72;
+  calcularImc(pesoEduardo, alturaEduardo);
 
-    // function calcularImc(peso, altura, nombre){
-    //     imc = peso / (altura*altura);
-    //     imprimir("El imc de " + nombre+ " es: " + imc);
-    // }
+  //codigo para analizar
 
-    // calcularImc(65, 1.72, "Luis");
-    // calcularImc(69, 1.85, "Josue");
+  function saltarLineas() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+  }
 
-    
+  // function calcularImc(peso, altura, nombre){
+  //     return peso / (altura*altura);
 
-    var pesoEduardo = 65;
-    var alturaEduardo = 1.72;
-    calcularImc(pesoEduardo, alturaEduardo);
-    
-    //codigo para analizar
+  // }
 
-    function saltarLineas(){
-        document.write("<br>");
-        document.write("<br>");
-        document.write("<br>");
-    }
-    
-    // function calcularImc(peso, altura, nombre){
-    //     return peso / (altura*altura);
-
-    // }
-
-    // calcularImc(65, 1.72, "Luis");
-    // calcularImc(69, 1.85, "Josue");
-
+  // calcularImc(65, 1.72, "Luis");
+  // calcularImc(69, 1.85, "Josue");
 
     var nombre1 = prompt("Escriba su nombre");
     var pesoEduardo = prompt(nombre1 + " Informe su peso, estimado: ");
     var alturaEduardo = prompt(nombre1 + " Informe su altura, estimado: ");
     var imc = calcularImc(pesoEduardo, alturaEduardo, nombre1);
+
+    imprimir(
+        "El indice de masa corporal calculado de " + nombre1 + " es: " + imc
+    );
+
+    if (imc < 18.5) {
+        imprimir("Su peso está abajo de lo recomendado!");
+
+    }
+    if (imc > 18.5 && imc < 24.9) {
+            imprimir("Su peso estimado está con normalidad!");
+    }
+    if (imc >= 25 && imc<30) {
+        imprimir("Actualmente está con sobrepeso!");
+    }   
     
-    imprimir("El indice de masa corporal calculado de " + nombre1 +" es: " + imc);
-
-
-
+    if (imc >= 30) {
+        imprimir("Su peso está considerarado cómo obesidad");
+    } 
+    
 </script>
