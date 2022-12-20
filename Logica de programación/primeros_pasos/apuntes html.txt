@@ -11,3 +11,5 @@ Cuándo definimos una variable, la tenemos que asignarla asimilando su acción q
 Para declarar funciones hay que hacerlo con verbos porque la moyoría de veces cumple con una acción con generando accioens
 
 Funciones predeterminadas de JS Math.random para poder dar un numero al azar y Math.round para poder aproximar una cantidad en algún entero
+
+Para poder parar un ciclo se utiliza el comando break; para poder parar la iteracion
